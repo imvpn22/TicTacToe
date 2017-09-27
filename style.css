@@ -10,8 +10,8 @@ body {
 
 td {
 	border: 2px solid #888;
-	height: 100px;
-	min-width: 100px;
+	height: 200px;
+	min-width: 200px;
 	text-align: center;
 	vertical-align: middle;
 	font-family: "Comic Sans MS", cursive, sans-serif;
@@ -53,9 +53,14 @@ table tr td:last-child {
     box-shadow: 0 0 10px 5px rgba(255, 99, 99, .35);
 }
 
+.tie {
+	background-color: rgba(50, 50, 50, .9);
+    box-shadow: 0 0 10px 5px rgba(50, 50, 50, .35);
+}
+
 #end_game {
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 400px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -63,7 +68,7 @@ table tr td:last-child {
 
     display: flex;
     flex-direction: column;
-   	justify-content: center;
+   	justify-content: space-evenly;
    	align-items: center;
 }
 
@@ -77,6 +82,20 @@ table tr td:last-child {
 }
 
 #start_game {
-	border:none;
-	outline: none;
+	border: none;
+    outline: none;
+    cursor: pointer;
+    color: #444;
+    background-color: #ddd;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 7px 15px;
+    font-family: monospace;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 10px 1px #000;
+}
+#start_game:hover {
+	background-color: #ccc;
+	color:#000;
+	box-shadow: 1px 1px 10px 0px #222;
 }
